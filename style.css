@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Tajawal:wght@300&display=swap');
+
+
+:root{
+    --black : rgb(73, 73, 73) ;
+    --blue : rgb(71, 120, 194)
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: rgb(73, 73, 73);
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+span{
+    color: var(--blue);
+}
+
+button{
+    margin: 15px !important;
+    padding: 7px 10px;
+    color: white;
+    background: var(--blue);
+    border: 1px solid var(--black);
+    border-radius: 10px !important;
+    font-size: 17px !important;
+    font-weight: 400px !important;
+}
+
+button:hover{
+    color: var(--blue);
+    background: white;
+    border: 1px solid var(--blue);
+}
+
+
+/* Header section start */
+header .header{
+    position:fixed;
+    z-index: 10;
+    top:0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 25, 63);
+}
+
+.logo{
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    height: auto;
+    width: 60%;
+    padding: 0;
+    align-items: center;
+    justify-content: end;
+}
+
+.header ul{
+    display: flex;
+    height: auto;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.header ul li{
+    font-size: 17px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.header a:hover{
+    color: var(--blue);
+}
+
+header .fa-bars{
+    font-size: 27px;
+    color: var(--blue);
+    display: none;
+    cursor: pointer;
+}
+/* Header section ends */
+
+
+
+/* home section start */
+#Home{
+    margin-top: 50px;
+    background: rgba(202, 196, 196, 0.3)
+}
+/* home section ends */
+
+
+/* about section start */
+#About{
+    background: rgb(218, 218, 218);
+}
+
+#About .box{
+    margin: 10px 0px;
+}
+
+#About .box i{
+    font-size: 25px;
+    color: var(--blue);
+}
+/* about section ends */
+
+
+/* facility section start */
+#Facility{
+    display: flex;
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(202, 196, 196, 0.3)
+}
+
+#Facility .heading{
+    margin-bottom: 50px;
+}
+
+#Facility .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+#Facility .box-container box{
+    height: 300px;
+    width: 300px;
+    margin: 10px 5px;
+    overflow: hidden;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Facility .box-container box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Facility .box-container box:hover img{
+    transform: scale(1.2);
+}
+/* facility section ends */
+
+
+/* review section statrs */
+#Review{
+    height: auto;
+    padding: 50px 0px;
+    background: url(./images/img17.jpg),linear-gradient(var(--black),var(--black)) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    align-items: center;
+    justify-content:center;
+}
+
+#Review .heading{
+    padding: 30px 0px;
+    color: white;
+}
+
+#Review .box-container{
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-flow: row;
+}
+
+#Review box{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background:rgb(221, 221, 221);
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-flow: column;
+    box-shadow: 3px 5px 6px 2px rgba(0,0,0,.3);
+}
+
+#Review .profile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    flex-flow: row;
+}
+
+#Review box img{
+    margin: 0px 5px 10px 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 75%;
+    object-fit: cover;
+}
+
+#Review box h4{
+    margin-right: 5px;
+}
+#Review box h5{
+    text-align: left;
+    color: black
+}
+
+#Review box p{
+    width: 80%;
+    text-align: right;
+    color: rgb(88, 88, 88);
+}
+/* review section ends */
+
+
+/* counter section starts */
+#Counter{
+    background: rgba(202, 196, 196, 0.3);
+}
+
+#Counter .box-container{
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+#Counter box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    margin: 20px;
+}
+/* counter section ends */
+
+
+/* Contact section starts */
+#Contact{
+    background: rgb(218, 218, 218);
+}
+
+#Contact .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px 40px 0px;
+}
+
+#Contact .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Contact box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 40%;
+}
+
+#Contact textarea{
+    width: 83%;
+}
+
+#Contact input{
+    height: 30px;
+    width: 100%;
+}
+
+#Contact select{
+    height: 30px;
+    width: 100%;
+}
+/* Contact section ends */
+
+
+/* post section starts */
+#Post{
+    background: rgba(202, 196, 196, 0.3);
+}
+
+#Post .heading{
+    display: flex;
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Post .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Post box{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-flow: column;
+    margin: 15px;
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 5px 6px 2px rgba(0,0,0,.3);
+}
+
+#Post box img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+#Post .content{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-flow: column;
+    text-align: left;
+    padding: 0px 7px;
+}
+
+#Post .content h7{
+    padding-bottom: 4px;
+    color: rgb(104, 104, 104);
+}
+
+#Post .content h4{
+    padding-bottom: 3px;
+}
+
+#post .content button{
+    padding-bottom: 1px;
+    padding-left: 2px;
+}
+/* post section ends */
+
+/* footer secion starts */
+#Footer{
+    background: var(--black);
+    padding: 30px 0px 2px 0px;
+}
+
+#Footer .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-flow: row;
+}
+
+#Footer box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+    flex-flow: column;
+}
+
+#Footer box:nth-child(1) h1{
+    margin-bottom: 3px;
+    color: white;
+}
+
+#Footer box:nth-child(1) h1 span{
+    color: var(--blue);
+}
+
+#Footer box:nth-child(1) p{
+    margin-bottom: 2px;
+    color: white;
+    opacity: .5;
+    width: 80%;
+}
+
+#Footer h4{
+    color: white;
+    margin-bottom: 3px;
+}
+
+#Footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+
+
+#Footer a:hover{
+    color: var(--blue);
+    opacity: 1;
+}
+
+#Footer i{
+    color: var(--blue);
+    margin-right: 5px;
+}
+
+
+
+/* Responsive start */
+@media (max-width:768px){
+
+    *{
+        font-size: 95%;
+    }
+    span{
+        font-size: 100%;
+    }
+
+    header .header{
+        height: 90px;
+    }
+
+    header .logo{
+        width: 82%;
+    }
+
+    header .fa-bars{
+        display: block;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    header .nav{
+        display: none;
+        position: fixed;
+        top: 25%;
+        right: 15%;
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.3);
+        width: 70%;
+        border: var(--blue) solid;
+        border-radius: 25px;
+        background: white;
+        height: 350px !important;
+    }
+
+    .nav ul{
+        width: 100%;
+        flex-flow: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px !important;
+    }
+    header nav a{
+        color: var(--blue) !important;
+        font-size: 20px;
+    }
+    .openNav{
+        display: block !important;
+        transition: all .5s ease-in-out;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    #Review, #Review .box-container{
+        flex-flow: column;
+    }
+
+    #Contact .heading h1{
+        font-size: 25px;
+    }
+
+    #Post box{
+        width: 100%;
+    }
+
+    #Footer box:nth-child(2) {
+        position: relative;
+        right: 35px;
+    }
+
+    #Footer box:nth-child(3) a{
+        display: flex;
+        right: 10px;
+    }
+
+}
+
+
+/* Responsive ends */
